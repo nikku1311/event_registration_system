@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registered Students</title>
+</head>
+<body>
+  <h2>Registered Students</h2>
+  <table border="1" cellpadding="10" cellspacing="0">
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Event</th>
+    </tr>
+    <% registrations.forEach(function(reg) { %>
+      <tr>
+        <td><%= reg.id %></td>
+        <td><%= reg.name %></td>
+        <td><%= reg.email %></td>
+        <td><%= reg.event_name %></td>
+      </tr>
+    <% }); %>
+  </table>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Registration</title>
+  <style>
+    body { font-family: Arial; text-align: center; padding-top: 50px; }
+    form { display: inline-block; text-align: left; }
+    input, button { display: block; margin: 10px 0; width: 300px; padding: 10px; }
+  </style>
+</head>
+<body>
+  <h2>Student Event Registration</h2>
+  <form action="/submit" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <input type="text" name="event_name" placeholder="Event Name" required />
+    <button type="submit">Register</button>
+  </form>
+</body>
+</html>
